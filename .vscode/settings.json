@@ -6,6 +6,7 @@
     "newno",
     "recmd",
     "recyclestatus",
+    "reqwest",
     "sbox"
 ],
 "rust-analyzer.showUnlinkedFileNotification": false
