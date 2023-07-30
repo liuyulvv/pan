@@ -1,7 +1,7 @@
 {
-    "name": "player",
+    "name": "pan",
     "private": true,
-    "version": "0.0.0",
+    "version": "0.0.1",
     "type": "module",
     "scripts": {
         "dev": "vite",
@@ -16,7 +16,8 @@
         "@tauri-apps/api": "^1.4.0",
         "normalize.css": "^8.0.1",
         "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react-dom": "^18.2.0",
+        "tauri-plugin-store-api": "^0.0.0"
     },
     "devDependencies": {
         "@tauri-apps/cli": "^1.4.0",

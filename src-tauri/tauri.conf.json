@@ -7,8 +7,8 @@
         "withGlobalTauri": false
     },
     "package": {
-        "productName": "player",
-        "version": "0.0.0"
+        "productName": "YunPan",
+        "version": "0.0.1"
     },
     "tauri": {
         "allowlist": {
@@ -16,6 +16,15 @@
             "shell": {
                 "all": false,
                 "open": true
+            },
+            "window": {
+                "all": false,
+                "create": true
+            },
+            "http": {
+                "all": false,
+                "request": true,
+                "scope": ["http://pan.baidu.com/**", "https://pan.baidu.com/**"]
             }
         },
         "bundle": {
@@ -37,7 +46,7 @@
             {
                 "fullscreen": false,
                 "resizable": true,
-                "title": "Player",
+                "title": "云盘",
                 "width": 800,
                 "height": 600
             }

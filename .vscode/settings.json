@@ -1,3 +1,12 @@
 {
-  "cSpell.words": ["fluentui"]
+"cSpell.words": [
+    "errmsg",
+    "fluentui",
+    "netdisk",
+    "newno",
+    "recmd",
+    "recyclestatus",
+    "sbox"
+],
+"rust-analyzer.showUnlinkedFileNotification": false
 }
