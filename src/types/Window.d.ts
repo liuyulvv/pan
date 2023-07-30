@@ -1,3 +1,3 @@
 declare interface Window {
-    APP_THEME: string;
+    APP_THEME_OPTION: string;
 }
