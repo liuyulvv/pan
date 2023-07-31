@@ -1,5 +1,5 @@
 [package]
-name = "yun_pan"
+name = "pan"
 version = "0.0.1"
 description = "云盘第三方客户端"
 authors = ["liuyulvv"]
