@@ -5,7 +5,7 @@ import { AccessToken } from './Interface';
 
 const store = new Store('user.config');
 
-const accessTokenCallback = await listen('access_token', async () => {
+await listen('access_token', async () => {
     const token: AccessToken = await invoke('get_access_token');
     await store.set('AccessToken', token);
     await store.save();
