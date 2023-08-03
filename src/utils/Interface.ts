@@ -53,8 +53,8 @@ enum FileType {
 
 interface FileInfo {
     category: FileType;
-    // extent_tinyint7: number;
-    // from_type: number;
+    extent_tinyint7: number;
+    from_type: number;
     fs_id: number;
     isdir: number;
     local_ctime: number;
