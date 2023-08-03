@@ -2,12 +2,21 @@
 "cSpell.words": [
     "errmsg",
     "fluentui",
+    "isdir",
     "netdisk",
     "newno",
+    "oper",
     "recmd",
     "recyclestatus",
     "reqwest",
-    "sbox"
+    "sbox",
+    "SVIP",
+    "tinyint",
+    "tkbind",
+    "uinfo",
+    "unlist",
+    "wpfile",
+    "xpan"
 ],
 "rust-analyzer.showUnlinkedFileNotification": false
 }
