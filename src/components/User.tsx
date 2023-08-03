@@ -1,23 +1,17 @@
-import { AccessToken, UserInfo } from '@/utils/Interface';
-import { store } from '@/utils/Store';
+import Http from '@/utils/Http';
+import { UserInfo } from '@/utils/Interface';
 import { Persona } from '@fluentui/react-components';
-import { http } from '@tauri-apps/api';
 import { useEffect, useState } from 'react';
 
 export default () => {
-    const url = 'https://pan.baidu.com//rest/2.0/xpan/nas?method=uinfo&access_token=';
-
     const [user, setUser] = useState<UserInfo>();
 
     useEffect(() => {
-        store.get('AccessToken').then((res) => {
-            const token = res as AccessToken | null;
-            if (token) {
-                http.fetch(url + token.access_token).then((res) => {
-                    const data: UserInfo = res.data as UserInfo;
-                    setUser(data);
-                });
-            }
+        const params = new Map<string, string>([['method', 'uinfo']]);
+
+        Http.get('rest/2.0/xpan/nas', params).then((res) => {
+            const data: UserInfo = res.data as UserInfo;
+            setUser(data);
         });
     }, []);
 
