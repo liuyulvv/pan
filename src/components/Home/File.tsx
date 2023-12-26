@@ -37,7 +37,9 @@ export default () => {
         const params = new Map<string, string>([['method', 'list']]);
         Http.get('rest/2.0/xpan/file', params).then((res) => {
             const data = res.data as FileInfoResponse;
-            setItems(data.list);
+            if (!data.errno) {
+                setItems(data.list);
+            }
         });
     });
 
