@@ -11,6 +11,7 @@
     "reqwest",
     "sbox",
     "SVIP",
+    "tauri",
     "tinyint",
     "tkbind",
     "uinfo",
