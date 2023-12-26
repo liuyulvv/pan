@@ -18,7 +18,7 @@ export default () => {
     return (
         <Persona
             name={user ? user.baidu_name : '未登录'}
-            secondaryText={user ? (user?.vip_type == 0 ? '' : user?.vip_type == 1 ? 'VIP' : 'SVIP') : ''}
+            secondaryText={user ? (user.vip_type == 0 ? '' : user.vip_type == 1 ? 'VIP' : 'SVIP') : ''}
             presence={{ status: user ? 'available' : 'blocked' }}
             avatar={{
                 image: {
